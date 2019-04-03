@@ -118,6 +118,30 @@
               <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
             </section>
           </footer>
+
+          <!-- MODAL BELOW-->
+
+          <section class="modal modal-cart">
+            <h1 class="modal__title">Добавить в корзину</h1>
+            <span class="modal__text">Выберите размер:</span>
+
+            <form class="modal__form form cart-form" action="https://echo.htmlacademy.ru">
+
+              <input class="form__radio-btn cart-form__btn cart-form__btn--checked" type="radio" name="type" value="size-s" id="size-s" checked>
+              <label class="visually-hidden" for="size-s">S</label>
+
+              <input class="form__radio-btn cart-form__btn" type="radio" name="type" value="size-m" id="size-m">
+              <label class="visually-hidden" for="size-m">M</label>
+
+              <input class="form__radio-btn cart-form__btn" type="radio" name="type" value="size-l" id="size-l">
+              <label class="visually-hidden" for="size-l">L</label>
+
+              <input class="form__submit form__submit--modal button" type="submit" value="Добавить">
+            </form>
+
+            <button class="visually-hidden">Закрыть</button>
+          </section>
+
   </body>
 
   </html>
