@@ -12,16 +12,17 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="#">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+          <li class="site-list__item"><a href="./catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="./form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <form action="https://echo.htmlacademy.ru">
-                <input type="search" id="site-search">
-                <label for="site-search">Поиск по сайту</label>
-                <button class="visually-hidden">Искать</button>
-            </form>
+              <a href="#">Поиск по сайту</a>
+              <form action="https://echo.htmlacademy.ru">
+                  <input type="search" id="site-search">
+                  <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                  <button class="visually-hidden">Искать</button>
+              </form>
           </li>
           <li class="user-list__item">
             <a href="#">Корзина: пока пуста</a>
@@ -38,7 +39,7 @@
       <section class="page-main__el hero">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="hero__list">
-          <li class="hero__item hero__item--interior"><a href="#"></a>Предметы интерьера</a></li>
+          <li class="hero__item hero__item--interior"><a href="#">Предметы интерьера</a></li>
           <li class="hero__item hero__item--toys"><a href="#">Детские игрушки</a></li>
         </ul>
       </section>
@@ -94,12 +95,10 @@
                 </blockquote>
               </li>
             </ul>
-            <ul class="review__controls slider__controls">
-              <li><a class="review__forward slider__forward button" href="#">Вперед</a></li>
-              <li><a class="review__back slider__back button" href="#">Назад</a></li>
-            </ul>
+            <button class="review__forward slider__forward button" href="#">Вперед</button>
+            <button class="review__back slider__back button" href="#">Назад</button>
             <a class="review__add button" href="#">Написать</a>
-            </div>
+          </div>
       </section>
     </main>
 
@@ -132,7 +131,7 @@
       <section class="page-footer__copyright copyright">
         <h3 class="visually-hidden">Разработчики сайта</h3>
         <span>Разработано</span>
-        <a class="copyright__academy" href="#"><span class="visually-hidden">HTML Academy</span></a>
+        <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
       </section>
     </footer>
 
