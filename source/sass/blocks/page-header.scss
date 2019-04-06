@@ -1,0 +1,25 @@
+.page-header {
+  width: 100%;
+
+
+  &--header {
+    box-shadow: 0px 1px 0 0 $white,
+                inset 0px 1px 0 0 $white;
+  }
+}
+
+.page-header__logo-image {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.page-header__open-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.page-header__main-menu {
+  display: flex;
+}
