@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  align-self: center;
+
+  padding: 20px 85px;
+
+  text-decoration: none;
+
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+
+
+  &--light {
+
+    color: $greyish-brown;
+    background-color: white;
+    border: solid 2px $greyish-brown;
+  }
+
+  &--light:hover,
+  &--light:focus {
+    background-color: $greyish-brown;
+    color: white;
+  }
+
+  &--light:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
