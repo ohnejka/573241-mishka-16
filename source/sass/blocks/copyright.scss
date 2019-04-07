@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #f1f1f1;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+
+}
+
+.copyright__academy {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 30px;
+    height: 35px;
+
+    top: -5px;
+    left: 0;
+
+    background-image: url('../../img/logo-htmlacademy.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
