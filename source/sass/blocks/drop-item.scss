@@ -1,0 +1,29 @@
+.drop-item {
+  display: block;
+  padding-left: 75px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-decoration: none;
+  color: black;
+  line-height: 24px;
+  font-size: 17px;
+  font-weight: 700;
+
+  box-shadow: 0 1px 0 0 $white,
+    inset 0 1px 0 0 $white;
+}
+
+.drop-item:hover,
+.drop-item:focus {
+  color: $black-60;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px $white;
+}
+
+.drop-item:active {
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px $white;
+}

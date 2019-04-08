@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "open sans";
+  src: local("OpenSans Regular"),
+    local("OpenSans-Regular"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open sans";
+  src: local("OpenSans Bold"),
+    local("OpenSans-Bold"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/variables.scss";
+@import "./blocks/page-wrapper.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/menu-btn.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/drop-item.scss";
+@import "./blocks/page-main.scss" ;
+@import "./blocks/hero-block.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/title-h2.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/good-details.scss";
+@import "./blocks/promo-good-image.scss";
+@import "./blocks/button.scss";
+@import "./blocks/about-us.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/catalogue.scss";
+@import "./blocks/card.scss";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

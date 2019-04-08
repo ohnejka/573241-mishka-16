@@ -1,0 +1,22 @@
+.good-details {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $greyish-brown;
+  border-collapse: collapse;
+}
+
+.good-details td {
+  box-shadow: 0 1px 0 0 $white;
+}
+
+
+.good-details__title-cell {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.good-details__cell {
+  padding: 10px;
+  padding-left: 30px;
+}

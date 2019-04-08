@@ -1,0 +1,41 @@
+.hero__list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.hero__item {
+  display: block;
+  padding: 30px;
+
+  background-color: $greeny-blue;
+
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.26;
+
+  &:hover,
+  &:focus {
+    padding-bottom: 35px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--active {
+    background-color: $seafoam-blue;
+  }
+}
+
+
+.hero__text {
+  display: block;
+  width: 110px;
+}
