@@ -1,17 +1,14 @@
 .button {
-  display: inline-block;
+  display: block;
+  width: 100%;
   align-self: center;
-
   padding: 20px 85px;
-
   text-decoration: none;
-
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-
 
   &--light {
 
@@ -29,4 +26,28 @@
   &--light:active {
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+.button--slider {
+  border: 1px solid $white;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.button--forward {
+  background-image: url("../../img/icon-left-arrow.svg");
+}
+
+.button--back {
+  background-image: url("../../img/icon-right-arrow.svg");
 }

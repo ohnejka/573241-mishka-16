@@ -1,0 +1,19 @@
+
+.table {
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+.table__cell {
+  padding: 10px;
+  padding-left: 30px;
+
+  &--bordered {
+    box-shadow: 0 1px 0 0 $white;
+  }
+
+  &--title {
+    width: 1%;
+    white-space: nowrap;
+  }
+}
