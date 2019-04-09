@@ -13,6 +13,15 @@
 
   box-shadow: 0 1px 0 0 $white,
     inset 0 1px 0 0 $white;
+
+  &--added {
+    display: none;
+  }
+
+  &--delivery {
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+  }
 }
 
 .drop-item:hover,
@@ -43,5 +52,16 @@
       border: none;
       box-shadow: none;
     }
+  }
+
+  .drop-item--delivery {
+    display: block;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .drop-item--added {
+    display: block;
   }
 }

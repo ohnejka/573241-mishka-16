@@ -1,6 +1,4 @@
 .page-header {
-
-
   &--header {
     box-shadow: 0 1px 0 0 $white,
       inset 0 1px 0 0 $white;
@@ -29,9 +27,11 @@
   }
 
   .page-header__logo-image {
-    width: 372px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 112px;
+    height: 46px;
+    margin-right: 210px;
   }
-
-
-
 }
