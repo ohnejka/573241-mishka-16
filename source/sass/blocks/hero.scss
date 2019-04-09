@@ -39,3 +39,13 @@
   display: block;
   width: 110px;
 }
+
+@media (min-width: $tablet-width) {
+  .hero__list {
+    flex-direction: row;
+  }
+
+  .hero__li {
+    width: 50%;
+  }
+}

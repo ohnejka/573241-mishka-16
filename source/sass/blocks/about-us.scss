@@ -64,3 +64,19 @@
 .about-us__item--gift::before {
   background-image: url("../../img/icon-feature-gift.svg");
 }
+
+
+@media (min-width: $tablet-width) {
+  .about-us__column {
+    display: flex;
+  }
+
+  .about-us__list {
+    width: 240px;
+
+    &--first {
+      margin-right: 100px;
+    }
+  }
+}
+

@@ -22,3 +22,16 @@
 .page-header__main-menu {
   display: flex;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__open-menu {
+    display: none;
+  }
+
+  .page-header__logo-image {
+    width: 372px;
+  }
+
+
+
+}

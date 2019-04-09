@@ -7,3 +7,10 @@
 .user-list__form {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 400px;
+    order: 1;
+  }
+}

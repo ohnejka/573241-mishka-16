@@ -27,3 +27,21 @@
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px $white;
 }
+
+@media (min-width: $tablet-width) {
+  .drop-item {
+    box-shadow: none;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    &:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

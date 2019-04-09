@@ -32,3 +32,9 @@
 
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    padding-bottom: 370px;
+  }
+}
