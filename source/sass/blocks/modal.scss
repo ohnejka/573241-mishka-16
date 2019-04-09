@@ -1,0 +1,39 @@
+.modal {
+  margin: 30px;
+  margin-top: 50px;
+
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal__title {
+  display: inline-block;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+
+  margin-bottom: 25px;
+}
+
+.modal__text {
+  display: inline-block;
+  text-align: center;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $greyish-brown;
+  margin-bottom: 30px;
+}
+
+.form__submit {
+  margin-top: 30px;
+}

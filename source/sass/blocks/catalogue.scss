@@ -2,13 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.catalogue__item {
+  width: 100%;
+}
 
 .catalogue__card {
   margin-bottom: 30px;
+
+  &--last {
+    margin-bottom: 0;
+  }
 }
