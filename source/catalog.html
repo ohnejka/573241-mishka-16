@@ -7,50 +7,58 @@
   </head>
 
   <body>
-      <header class="page-header">
-          <div class="page-wrapper page-wrapper--header">
-            <div class="page-header__logo-image">
-                <a href="./index.html">
-                  <img class="logo" src="./img/logo-mobile.svg" width="86" height="35" alt="mishka logotype">
-                </a>
-            </div>
+      <div class="page-wrapper">
+          <header class="page-header">
+              <div class="page-wrapper--header">
 
+                <div class="page-header__logo-image">
+                  <a href="index.html">
+                    <img class="logo" src="./img/logo-mobile.svg" width="86" height="35" alt="mishka logotype">
+                  </a>
+                </div>
 
-            <button class="page-header__open-menu menu-btn" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
+                <button class="page-header__open-menu menu-btn" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
 
-            <nav class="page-header__main-menu main-nav">
+                <nav class="page-header__main-menu main-nav">
 
-              <ul class="main-nav__list site-list">
-                <li>
-                  <a class="drop-item site-list__item" href="./catalog.html">Каталог товаров</a>
-                </li>
+                  <ul class="main-nav__list site-list">
+                    <li>
+                      <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./catalog.html">Каталог товаров</a>
+                    </li>
+                    <li>
+                      <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./form.html">Вязание на заказ</a>
+                    </li>
+                    <li>
+                        <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Новые поступления</a>
+                      </li>
+                      <li>
+                          <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Распродажа</a>
+                        </li>
+                  </ul>
 
-                <li>
-                  <a class="drop-item site-list__item" href="./form.html">Вязание на заказ</a>
-                </li>
-              </ul>
-
-              <ul class="main-nav__list user-list">
-                <li class="user-list__item">
-                    <a class="drop-item" href="#">Поиск по сайту</a>
-                    <form class="user-list__form" action="https://echo.htmlacademy.ru">
-                        <input type="search" id="site-search">
-                        <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-                        <button class="visually-hidden">Искать</button>
-                    </form>
-                </li>
-                <li class="user-list__item">
-                  <a class="drop-item" href="#">Корзина: пока пуста</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+                  <div class="main-nav__user-wrapper">
+                    <ul class="main-nav__list user-list user-list--first-row">
+                      <li>
+                          <a class="drop-item user-list__item" href="#">Поиск по сайту</a>
+                          <form class="user-list__form" action="https://echo.htmlacademy.ru">
+                              <input type="search" id="site-search">
+                              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                              <button class="visually-hidden">Искать</button>
+                          </form>
+                      </li>
+                      <li>
+                        <a class="drop-item user-list__item" href="#">Корзина: пока пуста</a>
+                      </li>
+                    </ul>
+                    <a class="drop-item drop-item--added drop-item--delivery" href="#">Бесплатная доставка по России</a>
+                  </div>
+                </nav>
+              </div>
+            </header>
 
         <main class="page-main catalogue">
-          <div class="page-wrapper">
             <h1 class="page-main__title page-main__title--inner">Каталог товаров</h1>
             </h1>
 
@@ -120,24 +128,35 @@
               <p class="video-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
               <a class="video-block__order button button--light" href="#">Сделать заказ</a>
             </section>
-          </div>
         </main>
 
         <footer class="page-footer">
-            <h2 class="visually-hidden">Контакты</h2>
-            <section class="page-footer__social social">
-              <h3 class="visually-hidden">Мы в социальных сетях</h3>
-              <ul class="social__list">
-                <li><a class="social__item social__item--instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
-                <li><a class="social__item social__item--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
-                <li><a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
-              </ul>
-            </section>
-            <section class="page-footer__copyright copyright">
-              <h3 class="visually-hidden">Разработчики сайта</h3>
-              <span>Разработано</span>
-              <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
-            </section>
+            <div class="page-wrapper--inner page-wrapper--row">
+              <div class="page-footer__logo-image">
+                <img class="logo" src="./img/logo-mobile.svg" width="86" height="35" alt="mishka logotype">
+              </div>
+
+              <section class="page-footer__social social">
+                <div class="page-wrapper page-wrapper--smaller page-wrapper--break">
+                  <h3 class="visually-hidden">Мы в социальных сетях</h3>
+                  <ul class="social__list">
+                    <li><a class="social__item social__item--instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+                    <li><a class="social__item social__item--facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+                    <li><a class="social__item social__item--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="page-footer__copyright copyright">
+                <div class="page-wrapper--footer">
+                    <h3 class="visually-hidden">Разработчики сайта</h3>
+                    <span>Разработано</span>
+                    <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">
+                      <span class="visually-hidden">HTML Academy</span>
+                    </a>
+                </div>
+              </section>
+            </div>
           </footer>
 
           <!-- MODAL BELOW-->
@@ -162,7 +181,7 @@
 
             <button class="visually-hidden">Закрыть</button>
           </section>
-
+        </div>
   </body>
 
   </html>

@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  width: 260px;
   flex-direction: column;
   align-content: center;
   background-color: white;
@@ -8,6 +9,7 @@
 
 .card__link {
   display: flex;
+  width: 260px;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;

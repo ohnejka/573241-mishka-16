@@ -83,11 +83,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .about-us {
+  .about-us__title{
     margin-left: 175px;
   }
 
   .about-us__list {
     width: 295px;
+  }
+
+  .about-us__column {
+    margin-left: 175px;
   }
 }
