@@ -59,6 +59,13 @@
     display: block;
     width: 250px;
   }
+
+  .page-wrapper--card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: $desktop-width) {

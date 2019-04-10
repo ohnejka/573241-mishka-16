@@ -21,3 +21,13 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalogue__list {
+    width: 100%;
+  }
+
+  .catalogue__item {
+    width: 100%;
+  }
+}
