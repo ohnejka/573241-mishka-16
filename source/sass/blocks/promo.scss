@@ -90,6 +90,17 @@
 
     text-align: center;
     width: 70px;
+    line-height: 17px;
+  }
+
+  .promo__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .promo__image {
@@ -101,5 +112,40 @@
 
   .promo::after {
     bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 292px;
+    margin-left: 175px;
+  }
+
+  .promo__image {
+    width: 525px;
+    height: 636px;
+    margin-top: -63px;
+    margin-left: auto;
+
+  }
+
+  .promo__title {
+    margin-left: 175px;
+    z-index: 2;
+  }
+
+  .promo__subtitle {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+
+    text-align: center;
+    width: 70px;
+  }
+
+  .promo__wrapper--price {
+    margin-top: -140px;
+    margin-left: 175px;
   }
 }

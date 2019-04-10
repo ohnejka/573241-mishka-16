@@ -56,7 +56,7 @@
 
   .page-wrapper--break {
     display: block;
-    width: auto;
+    width: 250px;
   }
 }
 
@@ -64,4 +64,14 @@
   .page-wrapper {
     width: $desktop-width;
   }
+
+  .page-wrapper--inner {
+    width: $desktop-width - 50px * 2;
+    margin: 50px;
+  }
+
+  .page-wrapper--break {
+    width: 250px;
+  }
+
 }

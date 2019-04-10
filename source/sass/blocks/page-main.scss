@@ -35,6 +35,24 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
+    width: 494px;
+    margin: 0 auto;
     padding-bottom: 370px;
+    text-align: center;
+    color: black;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    padding-bottom: 354px;
+    width: 604px;
+
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+}
 }

@@ -57,11 +57,22 @@
   .drop-item--delivery {
     display: block;
     margin-top: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .drop-item--smaller {
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .drop-item--added {
     display: block;
+  }
+
+  .drop-item--bigger {
+    font-size: 17px;
   }
 }

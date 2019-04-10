@@ -22,31 +22,31 @@
 
             <ul class="main-nav__list site-list">
               <li>
-                <a class="drop-item site-list__item" href="./catalog.html">Каталог товаров</a>
+                <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./catalog.html">Каталог товаров</a>
               </li>
               <li>
-                <a class="drop-item site-list__item" href="./form.html">Вязание на заказ</a>
+                <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./form.html">Вязание на заказ</a>
               </li>
               <li>
-                  <a class="drop-item drop-item--added site-list__item" href="./form.html">Новые поступления</a>
+                  <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Новые поступления</a>
                 </li>
                 <li>
-                    <a class="drop-item drop-item--added  site-list__item" href="./form.html">Распродажа</a>
+                    <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Распродажа</a>
                   </li>
             </ul>
 
             <div class="main-nav__user-wrapper">
               <ul class="main-nav__list user-list user-list--first-row">
-                <li class="user-list__item">
-                    <a class="drop-item" href="#">Поиск по сайту</a>
+                <li>
+                    <a class="drop-item user-list__item" href="#">Поиск по сайту</a>
                     <form class="user-list__form" action="https://echo.htmlacademy.ru">
                         <input type="search" id="site-search">
                         <label class="visually-hidden" for="site-search">Поиск по сайту</label>
                         <button class="visually-hidden">Искать</button>
                     </form>
                 </li>
-                <li class="user-list__item">
-                  <a class="drop-item" href="#">Корзина: пока пуста</a>
+                <li>
+                  <a class="drop-item user-list__item" href="#">Корзина: пока пуста</a>
                 </li>
               </ul>
               <a class="drop-item drop-item--added drop-item--delivery" href="#">Бесплатная доставка по России</a>
@@ -63,15 +63,17 @@
       </section>
 
       <section class="page-main__el hero">
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="hero__list">
-          <li class="hero__li"><a class="hero__item hero__item--active hero__item--interior" href="#">
-            <span class="hero__text">
-            Предметы интерьера
-          </span></a></li>
-          <li class="hero__li"><a class="hero__item hero__item--interior" href="#">
-              <span class="hero__text">Детские игрушки</span></a></li>
-        </ul>
+        <div class="page-wrapper--inner">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <ul class="hero__list">
+            <li class="hero__li"><a class="hero__item hero__item--active hero__item--interior" href="#">
+              <span class="hero__text">
+              Предметы интерьера
+            </span></a></li>
+            <li class="hero__li"><a class="hero__item hero__item--interior" href="#">
+                <span class="hero__text">Детские игрушки</span></a></li>
+          </ul>
+       </div>
       </section>
 
 

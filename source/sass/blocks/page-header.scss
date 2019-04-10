@@ -35,3 +35,13 @@
     margin-right: 210px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 112px/2);
+    width: 112px;
+    height: 46px;
+  }
+}

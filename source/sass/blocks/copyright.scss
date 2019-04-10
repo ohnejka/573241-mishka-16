@@ -1,12 +1,14 @@
 .copyright {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   width: 200px;
   justify-content: center;
   align-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 
-  background-color: #f1f1f1;
+
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;

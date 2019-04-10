@@ -16,3 +16,9 @@
     flex-shrink: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 100%;
+  }
+}

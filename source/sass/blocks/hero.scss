@@ -18,7 +18,7 @@
   text-decoration: none;
   font-size: 19px;
   font-weight: 700;
-  line-height: 1.26;
+  line-height: 24px;
 
   &:hover,
   &:focus {
@@ -41,6 +41,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hero__item{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .hero__list {
     flex-direction: row;
   }

@@ -72,9 +72,22 @@
 
   .about-us__list {
     width: 240px;
+    font-size: 20px;
+    line-height: 22px;
 
     &--first {
       margin-right: 100px;
+
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    margin-left: 175px;
+  }
+
+  .about-us__list {
+    width: 295px;
   }
 }

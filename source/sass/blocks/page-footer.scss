@@ -8,6 +8,7 @@
 
 .page-footer__logo-image {
   display: none;
+  flex-shrink: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -15,5 +16,11 @@
     display: block;
     width: 102px;
     height: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo-image {
+
   }
 }
