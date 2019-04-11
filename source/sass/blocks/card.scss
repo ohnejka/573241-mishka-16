@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  width: 260px;
   flex-direction: column;
   align-content: center;
   background-color: white;
@@ -62,4 +63,43 @@
   background-image: url("../../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 100%;
+    flex-direction: row;
+    align-content: stretch;
+  }
+
+  .card__image {
+    width: 334px;
+    height: 334px;
+    margin: 0;
+  }
+
+  .card__info-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card__image {
+    width: 316px;
+    height: 462px;
+  }
+
+  .card__title {
+    max-width: 235px;
+    min-height: 50px;
+  }
 }

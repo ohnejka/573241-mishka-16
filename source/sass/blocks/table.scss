@@ -5,15 +5,15 @@
 }
 
 .table__cell {
-  padding: 10px;
-  padding-left: 30px;
+  padding-left: 5px;
+}
 
-  &--bordered {
-    box-shadow: 0 1px 0 0 $white;
-  }
+.table__cell--bordered {
+  box-shadow: 0 1px 0 0 $white;
+}
 
-  &--title {
-    width: 1%;
-    white-space: nowrap;
-  }
+.table__cell--title {
+  width: 1%;
+  white-space: nowrap;
+  padding-left: 0;
 }

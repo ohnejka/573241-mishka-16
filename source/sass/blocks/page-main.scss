@@ -1,6 +1,7 @@
 .page-main__title {
+  width: 245px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 140px;
 
@@ -10,14 +11,15 @@
   font-style: normal;
   line-height: 30px;
   color: $very-dark-brown;
+}
 
-  &--inner {
-    display: block;
-    background-color: #f1f1f1;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    margin-bottom: 30px;
-  }
+.page-main__title--inner {
+  display: block;
+  background-color: #f1f1f1;
+  padding-top: 75px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .page-main__el {
@@ -31,4 +33,40 @@
   color: $greyish-brown;
 
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 494px;
+    margin: 0 auto;
+    padding-bottom: 370px;
+    text-align: center;
+    color: black;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  .page-main__title--inner {
+    width: 100%;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    padding-bottom: 354px;
+    width: 604px;
+
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
+
+  .page-main__title--inner {
+    width: 100%;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
 }

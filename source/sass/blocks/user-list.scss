@@ -1,9 +1,24 @@
 .user-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset();
 }
 
 .user-list__form {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    justify-content: space-between;
+    width: 370px;
+  }
+
+  .user-list--first-row {
+    margin-bottom: 45px;
+  }
+
+  .main-nav__user-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

@@ -1,12 +1,8 @@
-.page-header {
-  width: 100%;
-
-
-  &--header {
-    box-shadow: 0 1px 0 0 $white,
+/*.page-header--header {
+  box-shadow: 0 1px 0 0 $white,
       inset 0 1px 0 0 $white;
-  }
 }
+*/
 
 .page-header__logo-image {
   margin-top: 22px;
@@ -22,4 +18,29 @@
 
 .page-header__main-menu {
   display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__open-menu {
+    display: none;
+  }
+
+  .page-header__logo-image {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 112px;
+    height: 46px;
+    margin-right: 210px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 112px / 2);
+    width: 112px;
+    height: 46px;
+  }
 }

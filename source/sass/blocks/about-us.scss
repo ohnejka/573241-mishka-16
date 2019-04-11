@@ -22,45 +22,64 @@
   padding-bottom: 30px;
 }
 
-.about-us__item--ecology::before,
-.about-us__item--scandinavian::before,
-.about-us__item--likes::before,
-.about-us__item--love::before,
-.about-us__item--local::before,
-.about-us__item--gift::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-
-  width: 50px;
-  height: 40px;
-
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-
 
 .about-us__item--ecology::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-flower.svg");
 }
 
 .about-us__item--scandinavian::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-money.svg");
 }
 
 .about-us__item--likes::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-heart.svg");
 }
 
 .about-us__item--love::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-ball.svg");
 }
 
 .about-us__item--local::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-rocket.svg");
 }
 
 .about-us__item--gift::before {
+  @include about-us-before();
   background-image: url("../../img/icon-feature-gift.svg");
+}
+
+
+@media (min-width: $tablet-width) {
+  .about-us__column {
+    display: flex;
+  }
+
+  .about-us__list {
+    width: 240px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__list--first {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__title {
+    margin-left: 175px;
+  }
+
+  .about-us__list {
+    width: 295px;
+  }
+
+  .about-us__column {
+    margin-left: 175px;
+  }
 }

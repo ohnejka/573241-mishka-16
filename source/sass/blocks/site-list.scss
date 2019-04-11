@@ -1,5 +1,22 @@
 .site-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset();
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    width: 320px;
+    margin-top: 0;
+    align-content: space-between;
+  }
 }

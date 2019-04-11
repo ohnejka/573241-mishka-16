@@ -1,3 +1,29 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
 .page-footer__contact-us {
   margin-bottom: 40px;
+}
+
+.page-footer__logo-image {
+  display: none;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.page-footer__copyright {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-image {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
+
+  .page-footer__copyright {
+    width: 200px;
+  }
 }

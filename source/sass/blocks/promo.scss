@@ -3,10 +3,8 @@
 }
 
 .promo__title {
-  margin-top: 35px;
   margin-bottom: 5px;
 }
-
 
 .promo__subtitle {
   margin-bottom: 30px;
@@ -37,6 +35,7 @@
 }
 
 .promo__price {
+  display: block;
   margin-bottom: 30px;
 
   font-size: 17px;
@@ -47,13 +46,14 @@
 }
 
 .promo__order {
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 
 .promo::after {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: -60px;
   left: 0;
 
   width: 100%;
@@ -62,4 +62,89 @@
   background-image: url("../../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 282px;
+  }
+
+  .promo__big-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .promo__wrapper--price {
+    margin-top: -140px;
+  }
+
+  .promo__subtitle {
+    position: absolute;
+    top: 0;
+    right: 80px;
+
+    text-align: center;
+    width: 70px;
+    line-height: 17px;
+  }
+
+  .promo__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo__image {
+    width: 333px;
+    height: 404px;
+
+    margin-top: 20px;
+  }
+
+  .promo::after {
+    bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 292px;
+    margin-left: 175px;
+  }
+
+  .promo__image {
+    width: 525px;
+    height: 636px;
+    margin-top: -63px;
+    margin-left: auto;
+  }
+
+  .promo__title {
+    margin-left: 175px;
+    z-index: 2;
+  }
+
+  .promo__subtitle {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+
+    text-align: center;
+    width: 70px;
+  }
+
+  .promo__wrapper--price {
+    margin-top: -140px;
+    margin-left: 175px;
+  }
 }

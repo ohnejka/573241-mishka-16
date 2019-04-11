@@ -1,6 +1,6 @@
 .drop-item {
   display: block;
-  padding-left: 75px;
+  padding-left: 45px;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -13,17 +13,66 @@
 
   box-shadow: 0 1px 0 0 $white,
     inset 0 1px 0 0 $white;
+
+  &:hover,
+  &:focus {
+    color: $black-60;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px $white;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px $white;
+  }
 }
 
-.drop-item:hover,
-.drop-item:focus {
-  color: $black-60;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px $white;
+.drop-item--added {
+  display: none;
 }
 
-.drop-item:active {
-  color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px $white;
+.drop-item--delivery {
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+@media (min-width: $tablet-width) {
+  .drop-item {
+    box-shadow: none;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+
+    &:active {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .drop-item--delivery {
+    display: block;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .drop-item--smaller {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .drop-item--added {
+    display: block;
+  }
+
+  .drop-item--bigger {
+    font-size: 17px;
+  }
 }
