@@ -9,21 +9,20 @@
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
+}
 
-  &--light {
+.button--light {
+  color: $greyish-brown;
+  background-color: white;
+  border: solid 2px $greyish-brown;
 
-    color: $greyish-brown;
-    background-color: white;
-    border: solid 2px $greyish-brown;
-  }
-
-  &--light:hover,
-  &--light:focus {
+  &:hover,
+  &:focus {
     background-color: $greyish-brown;
     color: white;
   }
 
-  &--light:active {
+  &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Мишка: Главная</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header">
-        <div class="page-wrapper--header">
+        <div class="page-wrapper__header">
 
           <div class="page-header__logo-image">
             <img class="logo" src="./img/logo-mobile.svg" width="86" height="35" alt="mishka logotype">
@@ -63,7 +64,7 @@
       </section>
 
       <section class="page-main__el hero">
-          <div class="page-wrapper--paddings-appear">
+          <div class="page-wrapper page-wrapper--paddings-appear">
           <h2 class="visually-hidden">Популярные товары</h2>
           <ul class="hero__list">
             <li class="hero__li"><a class="hero__item hero__item--active hero__item--interior" href="#">
@@ -78,10 +79,10 @@
 
 
       <section class="page-main__el promo">
-          <div class="page-wrapper--paddings">
+          <div class="page-wrapper page-wrapper--paddings">
           <h2 class="promo__title title-h2">Вязаные корзинки</h2>
           <b class="promo__subtitle">Товар недели</b>
-          <div class="promo__wrapper--big">
+          <div class="promo__big-wrapper">
             <div class="promo__wrapper">
               <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
@@ -105,7 +106,7 @@
           <div class="promo__image">
               <img class="promo-good-image" src="./img/triple-set-desktop@1x.jpg" width ="#" height="#" alt="Товар недели: вязаные корзинки">
           </div>
-          <div class="promo__wrapper--price">
+          <div class="promo__wrapper promo__wrapper--price">
             <b class="promo__price">Цена: 990 руб.</b>
             <a class="promo__order button button--light" href="#">Заказать</a>
           </div>
@@ -115,7 +116,7 @@
 
 
       <section class="page-main__el about-us">
-          <div class="page-wrapper--paddings">
+          <div class="page-wrapper page-wrapper--paddings">
           <h2 class="about-us__title title-h2">Коротко о нас:</h2>
           <div class="about-us__column ">
             <ul class="about-us__list about-us__list--first">
@@ -138,7 +139,7 @@
       </section>
 
       <section class="page-main__el review">
-          <div class="page-wrapper--paddings">
+          <div class="page-wrapper page-wrapper--paddings">
           <h2 class="review__title title-h2">Отзывы:</h2>
           <div class="slider">
             <ul class="review__list slider__list">
@@ -164,8 +165,8 @@
       </section>
 
       <section class="page-contacts">
-          <div class="page-wrapper--paddings">
-            <h2 class="page-contacts__el title-h2--smaller">Контакты</h2>
+          <div class="page-wrapper page-wrapper--paddings">
+            <h2 class="page-contacts__el title-h2 title-h2--smaller">Контакты</h2>
             <table class="page-contacts__el  table contacts">
               <tr>
                 <td class="table__cell table__cell--title">e-mail:</td>
@@ -178,7 +179,7 @@
             </table>
         </div>
         <img class="page-contacts__el" src="./img/map-mobile@1x.jpg" width="322" height="457" alt="Вы можете найти нас по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
-        <div class="page-wrapper--paddings">
+        <div class="page-wrapper page-wrapper--paddings">
           <a class="page-contacts__el page-contacts__write button button--light" href="#">Напишите нам</a>
         </div>
 
@@ -187,8 +188,8 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-wrapper--paddings">
-        <div class="page-wrapper--row">
+      <div class="page-wrapper page-wrapper--paddings">
+        <div class="page-wrapper__row">
           <div class="page-footer__logo-image">
             <img class="logo" src="./img/logo-mobile.svg" width="86" height="35" alt="mishka logotype">
           </div>
@@ -205,7 +206,7 @@
           </section>
 
           <section class="page-footer__copyright copyright">
-            <div class="page-wrapper--footer">
+            <div class="page-wrapper__footer">
                 <h3 class="visually-hidden">Разработчики сайта</h3>
                 <span>Разработано</span>
                 <a class="copyright__academy" href="https://htmlacademy.ru/intensive/adaptive">

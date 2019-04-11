@@ -6,14 +6,14 @@
 
 .table__cell {
   padding-left: 5px;
+}
 
-  &--bordered {
-    box-shadow: 0 1px 0 0 $white;
-  }
+.table__cell--bordered {
+  box-shadow: 0 1px 0 0 $white;
+}
 
-  &--title {
-    width: 1%;
-    white-space: nowrap;
-    padding-left: 0;
-  }
+.table__cell--title {
+  width: 1%;
+  white-space: nowrap;
+  padding-left: 0;
 }
