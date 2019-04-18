@@ -3,9 +3,7 @@
 }
 
 .about-us__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset();
 
   font-size: 17px;
   font-weight: 700;
@@ -18,39 +16,50 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 56px;
+  padding-bottom: 27px;
+  outline: 1px dotted red;
 }
 
 
 .about-us__item--ecology::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-flower.svg");
+  left: 7px;
 }
 
 .about-us__item--scandinavian::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-money.svg");
+  top: 2px;
 }
 
 .about-us__item--likes::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-heart.svg");
+  top: 6px;
+  left: 7px;
 }
 
 .about-us__item--love::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-ball.svg");
+  top: 4px;
+  left: 3px;
 }
 
 .about-us__item--local::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-rocket.svg");
+  top: 5px;
+  left: -5px;
 }
 
 .about-us__item--gift::before {
   @include about-us-before();
   background-image: url("../../img/icon-feature-gift.svg");
+  top: 3px;
+  left: 3px;
 }
 
 
@@ -59,15 +68,28 @@
     display: flex;
   }
 
+  .about-us__title {
+    margin-bottom: 45px;
+  }
+
   .about-us__list {
     width: 240px;
     font-size: 20px;
     line-height: 22px;
   }
 
-  .about-us__list--first {
-    margin-right: 100px;
+  .about-us__item {
+    margin-bottom: 29px;
   }
+
+  .about-us__item--local {
+    width: 280px;
+  }
+
+  .about-us__list--first {
+    margin-right: 95px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {

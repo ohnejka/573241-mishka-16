@@ -1,6 +1,6 @@
 .social__list {
   @include list-reset();
-
+  outline: 1px solid green;
   display: flex;
   flex-grow: 0;
   flex-shrink: 0;
@@ -25,16 +25,19 @@
 .social__item--instagram::before {
   @include social-before();
   background-image: url("../../img/icon-insta.svg");
+  left: -23px;
 }
 
 .social__item--facebook::before {
   @include social-before();
   background-image: url("../../img/icon-fb.svg");
+  top: -4px;
 }
 
 .social__item--twitter::before {
   @include social-before();
   background-image: url("../../img/icon-twitter.svg");
+  left: 15px;
 }
 
 @media (min-width: $tablet-width) {

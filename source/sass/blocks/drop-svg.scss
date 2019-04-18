@@ -1,0 +1,21 @@
+.drop-svg{
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+
+.drop-svg--cart {
+  left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .drop-svg {
+    top: 36px;
+    left: 33px;
+  }
+
+  .drop-svg--cart {
+    top: 34px;
+    left: 30px;
+  }
+}

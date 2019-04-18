@@ -7,7 +7,7 @@
 }
 
 .promo__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 
   font-size: 17px;
   font-weight: 700;
@@ -18,7 +18,7 @@
 }
 
 .promo__description {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 15px;
   font-weight: 400;
@@ -27,16 +27,16 @@
 }
 
 .promo__table {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .promo__image {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .promo__price {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-size: 17px;
   font-weight: 700;
@@ -47,13 +47,13 @@
 
 .promo__order {
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 43px;
 }
 
 .promo::after {
   content: "";
   position: absolute;
-  bottom: -60px;
+  bottom: -10px;
   left: 0;
 
   width: 100%;
@@ -65,12 +65,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 74px;
+  }
+
+  .promo__title {
+    margin-bottom: 30px;
+  }
+
   .promo__wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
-    width: 282px;
+    width: 290px;
   }
 
   .promo__big-wrapper {
@@ -80,13 +88,13 @@
   }
 
   .promo__wrapper--price {
-    margin-top: -140px;
+    margin-top: -130px;
   }
 
   .promo__subtitle {
     position: absolute;
-    top: 0;
-    right: 80px;
+    top: 10px;
+    right: 30px;
 
     text-align: center;
     width: 70px;
@@ -96,22 +104,24 @@
   .promo__description {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 35px;
   }
 
   .promo__price {
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 34px;
   }
 
   .promo__image {
     width: 333px;
     height: 404px;
 
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .promo::after {
-    bottom: 0;
+    bottom: -30px;
   }
 }
 

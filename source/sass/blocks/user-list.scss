@@ -9,11 +9,26 @@
 @media (min-width: $tablet-width) {
   .user-list {
     justify-content: space-between;
-    width: 370px;
+    width: 398px;
+  }
+
+  .user-list li {
+    border: solid 1px rgb(236, 236, 236);
+    cursor: pointer;
   }
 
   .user-list--first-row {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+  }
+
+  .user-list--first-row li:first-child {
+    width: 85px;
+    min-height: 90px;
+  }
+
+  .user-list--first-row li:last-child {
+    flex-grow: 1;
+    border-left: none;
   }
 
   .main-nav__user-wrapper {

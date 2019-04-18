@@ -1,7 +1,15 @@
-.page-contacts__write {
-  margin: 0 auto;
+.page-contacts__el {
+  margin-bottom: 15px;
 }
 
-.page-contacts__el {
-  margin-bottom: 40px;
+.page-contacts__write {
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-contacts__write {
+    width: 230px;
+    margin-bottom: 55px;
+  }
 }

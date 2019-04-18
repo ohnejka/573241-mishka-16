@@ -3,3 +3,12 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .hero-block {
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -60px;
+  }
+}

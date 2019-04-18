@@ -9,6 +9,7 @@
 .hero__item {
   display: block;
   padding: 30px;
+  padding-top: 26px;
 
   background-color: $greeny-blue;
   color: white;
@@ -37,6 +38,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hero {
+  margin-left: 50px;
+  margin-top: -115px;
+  margin-bottom: 48px;
+}
   .hero__item {
     font-size: 20px;
     line-height: 30px;
@@ -44,9 +50,15 @@
 
   .hero__list {
     flex-direction: row;
+    width: 668px;
   }
 
   .hero__li {
     width: 50%;
+  }
+
+  .hero__text {
+    padding-top: 2px;
+    padding-left: 6px;
   }
 }
