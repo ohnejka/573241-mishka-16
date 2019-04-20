@@ -32,3 +32,13 @@
     width: 190px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__social {
+    margin-right: -30px;
+  }
+
+  .page-footer {
+    padding-bottom: 30px;
+  }
+}

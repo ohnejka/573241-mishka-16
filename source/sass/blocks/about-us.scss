@@ -94,7 +94,7 @@
 
 @media (min-width: $desktop-width) {
   .about-us__title {
-    margin-left: 175px;
+    margin-left: 172px;
   }
 
   .about-us__list {
@@ -103,5 +103,9 @@
 
   .about-us__column {
     margin-left: 175px;
+  }
+
+  .about-us__list--first {
+    margin-right: 56px;
   }
 }

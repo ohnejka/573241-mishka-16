@@ -10,5 +10,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -60px;
+    border-top: solid 1px rgb(236, 236, 236);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-block {
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+}
+

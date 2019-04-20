@@ -6,10 +6,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__title {
-    margin-bottom: 40px;
-  }
-
   .contacts tbody {
     display: flex;
     flex-grow: 0;
@@ -25,5 +21,16 @@
 
   .table__cell--smaller {
     width: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts tbody {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .contacts tr {
+    width: auto;
   }
 }

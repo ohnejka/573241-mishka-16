@@ -87,3 +87,38 @@
     bottom: -85px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review__title {
+    margin-top: 78px;
+    margin-left: 172px;
+    margin-bottom: 31px;
+  }
+
+  .review__quote {
+    margin-left: 172px;
+  }
+
+  .review__text {
+    width: 770px;
+    margin-bottom: 38px;
+  }
+
+  .review__add {
+    top: 84px;
+  }
+
+  .review::after {
+    display: none;
+  }
+
+  .review .page-wrapper--decor {
+    &::after {
+      bottom: -140px;
+    }
+  }
+
+  .review {
+    margin-bottom: 210px;
+  }
+}

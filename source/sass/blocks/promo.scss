@@ -121,7 +121,7 @@
   }
 
   .promo::after {
-    bottom: -30px;
+    bottom: -52px;
   }
 }
 
@@ -135,26 +135,38 @@
   .promo__image {
     width: 525px;
     height: 636px;
-    margin-top: -63px;
+    margin-top: -141px;
     margin-left: auto;
   }
 
   .promo__title {
-    margin-left: 175px;
+    margin-left: 172px;
     z-index: 2;
   }
 
   .promo__subtitle {
     position: absolute;
-    top: 20px;
-    left: 80px;
+    top: 14px;
+    left: 46px;
 
     text-align: center;
     width: 70px;
   }
 
+  .promo__description {
+    margin-bottom: 48px;
+  }
+
   .promo__wrapper--price {
-    margin-top: -140px;
-    margin-left: 175px;
+    margin-top: -130px;
+    margin-left: 173px;
+  }
+
+  .promo::after {
+    display: none;
+  }
+
+  .promo {
+    margin-bottom: 112px;
   }
 }
