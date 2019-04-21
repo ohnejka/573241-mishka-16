@@ -1,5 +1,6 @@
 .card {
   display: flex;
+  flex-shrink: 0;
   width: 260px;
   flex-direction: column;
   align-content: center;
@@ -11,7 +12,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
@@ -25,12 +25,21 @@
   align-self: flex-start;
   margin-left: 30px;
   margin-right: 20px;
+  margin-bottom: 6px;
   max-width: 200px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card__title--smaller {
+  width: 70%;
 }
 
 .card__info {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   margin-left: 30px;
   margin-right: 20px;
   font-size: 13px;
@@ -43,19 +52,19 @@
 .card__image {
   width: 260px;
   height: 195px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .card__buy-block {
-  padding: 30px;
+  padding: 28px;
   position: relative;
 }
 
 .card__buy-block::before {
   position: absolute;
   content: "";
-  top: 30px;
-  right: 20px;
+  top: 26px;
+  right: 26px;
 
   width: 20px;
   height: 20px;
@@ -71,6 +80,24 @@
     width: 100%;
     flex-direction: row;
     align-content: stretch;
+    justify-content: space-between;
+  }
+
+  .card__title {
+    max-width: 235px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 27px;
+  }
+
+  .card__info {
+    display: block;
+    padding-bottom: 15px;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 30px;
+    box-shadow: none;
   }
 
   .card__image {
@@ -82,6 +109,20 @@
   .card__info-column {
     display: flex;
     flex-direction: column;
+    width: 306px;
+  }
+
+  .card__buy-block {
+    padding-left: 0;
+    padding-top: 25px;
+    padding-right: 0;
+    margin-right: 30px;
+    font-weight: 700;
+    box-shadow: 0 -1px 0 0 $white;
+
+    &::before {
+      right: 0;
+    }
   }
 }
 
@@ -90,7 +131,6 @@
     width: 316px;
     display: flex;
     flex-direction: column;
-    align-content: center;
   }
 
   .card__image {
@@ -100,6 +140,21 @@
 
   .card__title {
     max-width: 235px;
-    min-height: 50px;
+    padding-left: 26px;
+    min-height: auto;
+  }
+
+  .card__info {
+    padding-left: 26px;
+    padding-bottom: 12px;
+  }
+
+  .card__buy-block {
+    margin-left: 26px;
+
+    &::before {
+      top: 23px;
+      right: -6px;
+    }
   }
 }

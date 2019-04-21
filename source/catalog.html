@@ -24,38 +24,44 @@
 
                 <nav class="page-header__main-menu main-nav">
 
-                  <ul class="main-nav__list site-list">
-                    <li>
-                      <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./catalog.html">Каталог товаров</a>
-                    </li>
-                    <li>
-                      <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./form.html">Вязание на заказ</a>
-                    </li>
-                    <li>
-                        <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Новые поступления</a>
+                    <ul class="main-nav__list site-list">
+                      <li>
+                        <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./catalog.html">Каталог товаров</a>
                       </li>
                       <li>
-                          <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Распродажа</a>
+                        <a class="drop-item drop-item--smaller drop-item--bigger site-list__item" href="./form.html">Вязание на заказ</a>
+                      </li>
+                      <li>
+                          <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Новые поступления</a>
                         </li>
-                  </ul>
-
-                  <div class="main-nav__user-wrapper">
-                    <ul class="main-nav__list user-list user-list--first-row">
-                      <li>
-                          <a class="drop-item user-list__item" href="#">Поиск по сайту</a>
-                          <form class="user-list__form" action="https://echo.htmlacademy.ru">
-                              <input type="search" id="site-search">
-                              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-                              <button class="visually-hidden">Искать</button>
-                          </form>
-                      </li>
-                      <li>
-                        <a class="drop-item user-list__item" href="#">Корзина: пока пуста</a>
-                      </li>
+                        <li>
+                            <a class="drop-item drop-item--added drop-item--smaller site-list__item" href="./form.html">Распродажа</a>
+                          </li>
                     </ul>
-                    <a class="drop-item drop-item--added drop-item--delivery" href="#">Бесплатная доставка по России</a>
-                  </div>
-                </nav>
+
+                    <div class="main-nav__user-wrapper">
+                      <ul class="main-nav__list user-list user-list--first-row">
+                        <li>
+                            <a class="drop-item user-list__item drop-item--search-link" href="#">Поиск по сайту</a>
+                            <svg class="drop-svg drop-svg--icon" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                                <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                              </svg>
+                            <form class="user-list__form" action="https://echo.htmlacademy.ru">
+                                <input type="search" id="site-search">
+                                <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                                <button class="visually-hidden">Искать</button>
+                            </form>
+                        </li>
+                        <li>
+                          <a class="drop-item drop-item--cart" href="#">Корзина: пока пуста</a>
+                          <svg class="drop-svg drop-svg--cart" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                              <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                            </svg>
+                        </li>
+                      </ul>
+                      <a class="drop-item drop-item--added drop-item--delivery" href="#">Бесплатная доставка по России</a>
+                    </div>
+                  </nav>
               </div>
             </header>
 
@@ -118,7 +124,7 @@
                           </a>
                           <div class="card__info-column">
                             <a class="card__link" href="#">
-                              <h3 class="card__title">Большая корзинка для игрушек</h3>
+                              <h3 class="card__title card__title--smaller">Большая корзинка для игрушек</h3>
                           </a>
                           <div class="page-wrapper__card">
                           <span class="card__info">Диаметр 30 см, высота 30 см</span>
@@ -141,7 +147,7 @@
                 <source src="#" type="video/ogg">
                 Your browser doesn't support video tag.
               </video>
-              <p class="video-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <p class="video-block__text">По просьбам наших <br/>любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
               <a class="video-block__order button button--light" href="#">Сделать заказ</a>
             </section>
           </div>

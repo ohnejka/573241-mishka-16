@@ -29,6 +29,14 @@
   .catalogue__item {
     width: 100%;
   }
+
+  .catalogue__card {
+    margin-bottom: 52px;
+  }
+
+  .catalogue__video {
+    margin-top: -26px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -41,6 +49,7 @@
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 55px;
   }
 
   .catalogue__card {
