@@ -69,7 +69,7 @@
   width: 20px;
   height: 20px;
 
-  background-image: url("../../img/icon-cart.svg");
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -131,6 +131,7 @@
     width: 316px;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
 
   .card__image {
@@ -141,12 +142,15 @@
   .card__title {
     max-width: 235px;
     padding-left: 26px;
-    min-height: auto;
   }
 
   .card__info {
     padding-left: 26px;
     padding-bottom: 12px;
+  }
+
+  .card__info--smaller {
+    padding-bottom: 36px;
   }
 
   .card__buy-block {

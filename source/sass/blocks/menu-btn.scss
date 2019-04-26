@@ -11,12 +11,14 @@
 }
 
 .menu-btn--open {
-  background-image: url("../../img/icon-menu-close.svg");
-
+  background-image: url("../img/icon-menu-close.svg");
 }
 
 .menu-btn--closed {
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   top: 33px;
 }
 
+.menu-btn--nojs {
+  display: none;
+}

@@ -24,19 +24,19 @@
 
 .social__item--instagram::before {
   @include social-before();
-  background-image: url("../../img/icon-insta.svg");
+  background-image: url("../img/icon-insta.svg");
   left: -23px;
 }
 
 .social__item--facebook::before {
   @include social-before();
-  background-image: url("../../img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
   top: -4px;
 }
 
 .social__item--twitter::before {
   @include social-before();
-  background-image: url("../../img/icon-twitter.svg");
+  background-image: url("../img/icon-twitter.svg");
   left: 15px;
 }
 

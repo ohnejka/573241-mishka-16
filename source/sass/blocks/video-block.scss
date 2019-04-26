@@ -26,7 +26,7 @@
     top: 5px;
     left: 33px;
 
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -103,7 +103,8 @@
 @media (min-width: $desktop-width) {
   .video-block {
     width: 100%;
-    flex-direction: row;
+    position: relative;
+    flex-direction: column;
     padding-bottom: 0;
     margin-bottom: 105px;
   }
@@ -112,5 +113,30 @@
     width: 682px;
     height: 455px;
     margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-block__title {
+    width: 200px;
+    margin-left: 650px;
+    margin-top: 97px;
+
+    &::before {
+      top: -55px;
+      left: 111px;
+    }
+  }
+
+  .video-block__text {
+    margin-left: 720px;
+    margin-bottom: 44px;
+  }
+
+  .video-block__order {
+    margin-left: 704px;
+    width: 228px;
+    margin-bottom: 59px;
   }
 }
