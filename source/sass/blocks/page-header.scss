@@ -1,9 +1,3 @@
-/*.page-header--header {
-  box-shadow: 0 1px 0 0 $white,
-      inset 0 1px 0 0 $white;
-}
-*/
-
 .page-header__logo-image {
   margin-top: 22px;
   margin-bottom: 17px;
@@ -12,8 +6,11 @@
 
 .page-header__open-menu {
   position: absolute;
-  right: 10px;
-  top: 33px;
+  right: 30px;
+  top: 30px;
+
+  z-index:2;
+  display: block;
 }
 
 .page-header__main-menu {

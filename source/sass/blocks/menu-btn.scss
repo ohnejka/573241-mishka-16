@@ -1,33 +1,22 @@
 .menu-btn {
 
-  padding: 20px;
+  padding: 10px;
   border: none;
-  background-color: transparent;
-  width: 20px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
-
-
-  background-image: url("../../img/icon-menu-open.svg");
+  background-color: white;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-/*
+.menu-btn--open {
+  background-image: url("../../img/icon-menu-close.svg");
 
-.menu-btn:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 2px;
-
-  left: 20px;
-  top: 25px;
-
-  background: black;
-  box-shadow:
-    0 10px 0 0 black,
-    0 20px 0 0 black;
 }
 
-*/
+.menu-btn--closed {
+  background-image: url("../../img/icon-menu-open.svg");
+  top: 33px;
+}
+
