@@ -7,6 +7,7 @@
 
 
 .hero__item {
+  position: relative;
   display: block;
   padding: 30px;
   padding-top: 26px;
@@ -20,11 +21,58 @@
 
   &:hover,
   &:focus {
-    padding-bottom: 35px;
+    margin-top: -5px;
+    padding-bottom: 40px;
+    padding-top:21px;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 24px;
+    right: 17px;
+    width: 60px;
+    height: 60px;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.5;
+  }
+}
+
+.hero__item:hover::after,
+.hero__item:focus::after {
+  opacity: 0.7;
+}
+
+.hero__item:active::after {
+  opacity: 0.3;
+}
+
+
+.hero__item--interior {
+  &::after {
+    background-image: url("../img/icon-interior.svg");
+  }
+}
+
+.hero__item--toys {
+  &::after {
+    background-image: url("../img/icon-toy.svg");
+    top: 21px;
+    right: 27px;
+  }
+}
+
+.hero__item--interior {
+  &::after {
+    top: 23px;
   }
 }
 
@@ -39,10 +87,28 @@
 
 @media (min-width: $tablet-width) {
   .hero {
+    position: relative;
     margin-left: 50px;
     margin-top: -115px;
     margin-bottom: 48px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      bottom: -20px;
+      left: -50px;
+
+      width: $tablet-width;
+      height: 30px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      background-size: 100%;
+    }
   }
+
 
   .hero__item {
     font-size: 20px;
@@ -62,6 +128,19 @@
     padding-top: 2px;
     padding-left: 6px;
   }
+
+  .hero__item--interior {
+    &::after {
+      top: 31px;
+    }
+  }
+
+  .hero__item--toys {
+    &::after {
+      top: 34px;
+      right: 34px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -71,5 +150,12 @@
 
   .hero {
     margin-bottom: 126px;
+
+    &::after {
+      width: $desktop-width;
+      bottom: -15px;
+      left: -52px;
+      background-size: 105%;
+    }
   }
 }

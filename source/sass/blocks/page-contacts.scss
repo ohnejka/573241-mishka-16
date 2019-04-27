@@ -32,8 +32,18 @@
 
 
 @media (min-width: $desktop-width) {
+
+  .page-contacts {
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 1050px;
+  }
+
   .page-contacts__wrapper {
-    margin-left: 172px;
+    margin-left: 58px;
     margin-bottom: 55px;
     display: flex;
     flex-direction: row;
@@ -43,19 +53,21 @@
   }
 
   .page-contacts__title {
-    padding-top: 72px;
+    margin-top: -21px;
 
     &::after {
-      top: 62px;
-      right: 362px;
+      top: -10px;
+      right: 361px;
     }
   }
 
   .page-contacts__first-column {
-    width: 300px;
+    width: 350px;
   }
 
   .page-contacts__write {
     margin-bottom: 0;
+    margin-left: -258px;
+    margin-top: -6px;
   }
 }

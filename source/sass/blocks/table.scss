@@ -26,3 +26,9 @@
   vertical-align: top;
   padding-bottom: 20px;
 }
+
+@media (min-width: $desktop-width) {
+  .table__cell--address {
+    width: 400px;
+  }
+}

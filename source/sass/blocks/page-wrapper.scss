@@ -1,6 +1,6 @@
 
 .page-wrapper {
-  outline: 1px dotted rgba(0, 0, 0, 0.3);
+  // outline: 1px dotted rgba(0, 0, 0, 0.3);
   display: flex;
   width: 320px;
   flex-direction: column;
@@ -21,13 +21,11 @@
 
 .page-wrapper--paddings {
   width: 260px;
-  outline: 1px dotted tomato;
   margin: 0 auto;
 }
 
 .page-wrapper--smaller {
   width: 260px;
-  outline: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +88,6 @@
 
   .page-wrapper--paddings-appear {
     width: $desktop-width - 50px * 2;
-    outline: 1px dotted tomato;
     margin: 0;
   }
 
@@ -99,7 +96,12 @@
   }
 
   .page-wrapper--decor {
+    padding-bottom: 50px;
     position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
 
     &::after {
       content: "";
@@ -116,9 +118,20 @@
     }
   }
 
+  .page-wrapper--decor-no {
+    background-image: none;
+    padding-bottom: 0px;
+  }
+
   .page-wrapper--contacts-break {
     width: 230px;
     margin: 0;
     margin-top: -150px;
+  }
+
+  .page-wrapper--contacts {
+    width: 300px;
+
+
   }
 }

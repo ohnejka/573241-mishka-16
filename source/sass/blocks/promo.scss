@@ -18,7 +18,7 @@
 }
 
 .promo__description {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 
   font-size: 15px;
   font-weight: 400;
@@ -36,7 +36,7 @@
 
 .promo__price {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   font-weight: 700;
@@ -54,14 +54,15 @@
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 0px;
 
   width: 100%;
   height: 25px;
 
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  background-size: 100%;
 }
 
 @media (min-width: $tablet-width) {

@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 27px;
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   line-height: 30px;
   color: $very-dark-brown;
 }
@@ -37,10 +37,10 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    width: 494px;
+    width: 500px;
     margin: 0 auto;
     padding-top: 152px;
-    padding-bottom: 487px;
+    padding-bottom: 489px;
     text-align: center;
     color: black;
     font-size: 43px;
@@ -60,7 +60,7 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     padding-bottom: 473px;
-    width: 604px;
+    width: 660px;
 
     font-size: 53px;
     font-weight: 700;

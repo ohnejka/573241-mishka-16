@@ -50,7 +50,8 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
+  background-size: 100%;
 }
 
 .review__add {
@@ -86,12 +87,13 @@
 
   .review::after {
     bottom: -85px;
+    left: 0px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review__title {
-    margin-top: 78px;
+    margin-top: 70px;
     margin-left: 172px;
     margin-bottom: 31px;
   }
@@ -106,7 +108,7 @@
   }
 
   .review__add {
-    top: 84px;
+    top: 78px;
   }
 
   .review::after {
@@ -115,11 +117,11 @@
 
   .review .page-wrapper--decor {
     &::after {
-      bottom: -140px;
+      bottom: -91px;
     }
   }
 
   .review {
-    margin-bottom: 210px;
+    margin-bottom: 160px;
   }
 }

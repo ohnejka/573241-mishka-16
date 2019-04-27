@@ -1,5 +1,5 @@
 .about-us__title {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .about-us__list {
@@ -16,8 +16,8 @@
 .about-us__item {
   position: relative;
 
-  padding-top: 56px;
-  padding-bottom: 27px;
+  padding-top: 52px;
+  padding-bottom: 31px;
   outline: 1px dotted red;
 }
 
@@ -82,8 +82,12 @@
     margin-bottom: 29px;
   }
 
+  .about-us__item--love {
+    width: 300px;
+  }
+
   .about-us__item--local {
-    width: 280px;
+    width: 300px;
   }
 
   .about-us__list--first {
@@ -92,6 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 35px;
+  }
+
   .about-us__title {
     margin-left: 172px;
   }
