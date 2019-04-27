@@ -1,11 +1,12 @@
 
 .table {
   border-collapse: collapse;
-  vertical-align: top;
 }
 
 .table__cell {
   padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .table__cell--bordered {
@@ -13,7 +14,21 @@
 }
 
 .table__cell--title {
-  width: 1%;
-  white-space: nowrap;
+  width: 93px;
   padding-left: 0;
+}
+
+.table__cell--smaller {
+  width: 72px;
+}
+
+.table__cell--contacts {
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .table__cell--address {
+    width: 400px;
+  }
 }

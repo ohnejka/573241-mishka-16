@@ -1,7 +1,8 @@
 .video-block {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding-top: 26px;
+  padding-bottom: 30px;
   margin-bottom: 60px;
 }
 
@@ -22,10 +23,10 @@
     content: "";
     width: 32px;
     height: 32px;
-    top: -5px;
-    left: 30px;
+    top: 5px;
+    left: 33px;
 
-    background-image: url("../../img/icon-video.svg");
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -33,12 +34,7 @@
 
 .video-block__preview {
   align-self: center;
-  margin-bottom: 35px;
-}
-
-.video-block__video {
-  display: none;
-  align-self: center;
+  margin-bottom: 15px;
 }
 
 .video-block__text {
@@ -46,5 +42,96 @@
   font-weight: 400;
   line-height: 24px;
   color: $greyish-brown;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+  padding-left: 34px;
+  padding-right: 43px;
+}
+
+.video-block__order {
+  width: 192px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-block {
+    padding-top: 0;
+    margin-bottom: 63px;
+  }
+
+  .video-block__preview {
+    order: 1;
+    width: 669px;
+    height: 455px;
+    margin-bottom: 38px;
+  }
+
+  .video-block__title {
+    order: 2;
+    font-size: 20px;
+    padding-left: 105px;
+    margin-bottom: 18px;
+
+    &::before {
+      top: -5px;
+      left: 40px;
+    }
+  }
+
+  .video-block__text {
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 40px;
+    margin-bottom: 33px;
+  }
+
+  .video-block__text br {
+    display: none;
+  }
+
+  .video-block__order {
+    order: 4;
+    width: calc(100% - 40px * 2);
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-block {
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 105px;
+  }
+
+  .video-block__preview {
+    width: 682px;
+    height: 455px;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .video-block__title {
+    width: 200px;
+    margin-left: 650px;
+    margin-top: 97px;
+
+    &::before {
+      top: -55px;
+      left: 111px;
+    }
+  }
+
+  .video-block__text {
+    margin-left: 720px;
+    margin-bottom: 44px;
+  }
+
+  .video-block__order {
+    margin-left: 704px;
+    width: 228px;
+    margin-bottom: 59px;
+  }
 }

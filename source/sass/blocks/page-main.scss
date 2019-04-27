@@ -1,14 +1,14 @@
 .page-main__title {
-  width: 245px;
+  width: 250px;
   padding: 0;
   margin: 0 auto;
-  padding-top: 90px;
-  padding-bottom: 140px;
+  padding-top: 73px;
+  padding-bottom: 120px;
 
   text-align: center;
   font-size: 27px;
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   line-height: 30px;
   color: $very-dark-brown;
 }
@@ -16,14 +16,14 @@
 .page-main__title--inner {
   display: block;
   background-color: #f1f1f1;
-  padding-top: 75px;
-  padding-bottom: 60px;
+  padding-top: 73px;
+  padding-bottom: 74px;
   margin-bottom: 30px;
   width: 100%;
 }
 
 .page-main__el {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .page-main__subtitle {
@@ -37,9 +37,10 @@
 
 @media (min-width: $tablet-width) {
   .page-main__title {
-    width: 494px;
+    width: 500px;
     margin: 0 auto;
-    padding-bottom: 370px;
+    padding-top: 152px;
+    padding-bottom: 489px;
     text-align: center;
     color: black;
     font-size: 43px;
@@ -48,16 +49,34 @@
   }
 
   .page-main__title--inner {
+    position: relative;
     width: 100%;
-    padding-bottom: 60px;
-    margin-bottom: 30px;
+    padding-top: 97px;
+    padding-bottom: 90px;
+    margin-top: -63px;
+    margin-bottom: 67px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -3px;
+      left: 0;
+
+      width: $tablet-width;
+      height: 25px;
+
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      background-size: 100%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    padding-bottom: 354px;
-    width: 604px;
+    padding-bottom: 473px;
+    width: 660px;
 
     font-size: 53px;
     font-weight: 700;
@@ -66,7 +85,16 @@
 
   .page-main__title--inner {
     width: 100%;
-    padding-bottom: 60px;
-    margin-bottom: 60px;
+    padding-top: 95px;
+    padding-bottom: 110px;
+    margin-bottom: 120px;
+
+    &::after {
+      bottom: -6px;
+      left: 0;
+
+      width: $desktop-width;
+      height: 30px;
+    }
   }
 }

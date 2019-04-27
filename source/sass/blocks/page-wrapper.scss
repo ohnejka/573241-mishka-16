@@ -1,6 +1,6 @@
 
 .page-wrapper {
-  outline: 2px solid rgba(0, 0, 0, 0.3);
+  // outline: 1px dotted rgba(0, 0, 0, 0.3);
   display: flex;
   width: 320px;
   flex-direction: column;
@@ -21,13 +21,11 @@
 
 .page-wrapper--paddings {
   width: 260px;
-  outline: 1px dotted tomato;
   margin: 0 auto;
 }
 
 .page-wrapper--smaller {
-  width: 200px;
-  outline: none;
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,11 +41,13 @@
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
+    margin-top: 32px;
   }
 
   .page-wrapper__header {
     display: flex;
     margin: 20px 50px;
+    margin-top: 0;
   }
 
   .page-wrapper__card {
@@ -72,6 +72,12 @@
     width: $desktop-width;
   }
 
+  .page-wrapper__header {
+    width: $desktop-width;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
   .page-wrapper--paddings {
     width: $desktop-width - 50px * 2;
   }
@@ -82,11 +88,48 @@
 
   .page-wrapper--paddings-appear {
     width: $desktop-width - 50px * 2;
-    outline: 1px dotted tomato;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .page-wrapper__card {
     display: block;
+  }
+
+  .page-wrapper--decor {
+    padding-bottom: 50px;
+    position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      left: 0;
+      bottom: -52px;
+      width: 100%;
+      height: 25px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
+  .page-wrapper--decor-no {
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .page-wrapper--contacts-break {
+    width: 230px;
+    margin: 0;
+    margin-top: -150px;
+  }
+
+  .page-wrapper--contacts {
+    width: 300px;
   }
 }

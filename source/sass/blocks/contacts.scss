@@ -4,3 +4,33 @@
   line-height: 30px;
   color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts tbody {
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    width: 668px;
+    font-size: 17px;
+  }
+
+  .contacts tr {
+    display: flex;
+    width: 50%;
+  }
+
+  .table__cell--smaller {
+    width: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts tbody {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .contacts tr {
+    width: auto;
+  }
+}

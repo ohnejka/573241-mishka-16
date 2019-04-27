@@ -1,8 +1,8 @@
 .button {
   display: block;
-  width: 200px;
+  width: 100%;
   align-self: center;
-  padding: 10px;
+  padding: 15px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 700;
@@ -28,12 +28,13 @@
 }
 
 .button--slider {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border: 1px solid $white;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -46,11 +47,11 @@
 }
 
 .button--forward {
-  background-image: url("../../img/icon-left-arrow.svg");
+  background-image: url("../img/icon-left-arrow.svg");
 }
 
 .button--back {
-  background-image: url("../../img/icon-right-arrow.svg");
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 
@@ -70,5 +71,12 @@
   &:active {
     background-color: rgb(70, 193, 174);
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--slider {
+    border: none;
+    padding-top: 20px;
   }
 }

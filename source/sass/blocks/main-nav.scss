@@ -3,10 +3,27 @@
   flex-direction: column;
 }
 
+.main-nav__list li {
+  position: relative;
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__user-wrapper {
+    display: none;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-direction: row;
     justify-content: space-between;
+    width: 668px;
   }
 
   .main-nav__list {
@@ -14,6 +31,10 @@
     flex-grow: 0;
     flex-wrap: wrap;
     flex-shrink: 0;
+  }
+
+  .main-nav__user-wrapper {
+    width: 398px;
   }
 }
 

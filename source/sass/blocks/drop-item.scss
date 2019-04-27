@@ -1,9 +1,9 @@
 .drop-item {
   display: block;
-  padding-left: 45px;
+  padding-left: 75px;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 
   text-decoration: none;
   color: black;
@@ -56,14 +56,25 @@
 
   .drop-item--delivery {
     display: block;
-    margin-top: 25px;
+    margin-top: 6px;
+    margin-right: 50px;
     font-size: 15px;
     line-height: 24px;
+    z-index: 2;
   }
 
   .drop-item--smaller {
     font-size: 15px;
     line-height: 24px;
+  }
+
+  .drop-item--search-link {
+    display: none;
+  }
+
+  .drop-item--cart {
+    padding-left: 80px;
+    padding-top: 31px;
   }
 }
 
