@@ -141,8 +141,12 @@
   }
 
   .card__title {
-    max-width: 235px;
+    max-width: 285px;
     padding-left: 26px;
+  }
+
+  .card__title--smaller {
+    width: 265px;
   }
 
   .card__info {

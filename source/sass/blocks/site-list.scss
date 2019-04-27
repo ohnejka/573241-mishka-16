@@ -10,6 +10,10 @@
     margin-top: 107px;
   }
 
+  .site-list li {
+    z-index: 2;
+  }
+
   .site-list li:first-child {
     margin-right: 43px;
   }
