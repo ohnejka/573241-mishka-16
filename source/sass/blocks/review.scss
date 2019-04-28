@@ -62,6 +62,17 @@
 @media (min-width: $tablet-width) {
   .review {
     margin-bottom: 147px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
   }
 
   .review__title {
@@ -123,5 +134,6 @@
 
   .review {
     margin-bottom: 160px;
+    background-image: none;
   }
 }
