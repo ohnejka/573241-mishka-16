@@ -27,6 +27,45 @@
   padding-bottom: 20px;
 }
 
+.table__email {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 178px;
+    height: 1px;
+    background-color: $greeny-blue;
+  }
+}
+
+.table__email:hover,
+.table__email:focus {
+  color: $greeny-blue;
+}
+
+.table__email:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .table__email {
+    &::after {
+      width: 200px;
+    }
+  }
+
+  .table__cell {
+    padding-left: 0;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .table__cell--address {
     width: 400px;

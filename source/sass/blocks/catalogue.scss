@@ -17,9 +17,6 @@
   margin-bottom: 30px;
 }
 
-.catalogue__card--last {
-  margin-bottom: 0;
-}
 
 @media (min-width: $tablet-width) {
   .catalogue__list {
@@ -37,6 +34,10 @@
   .catalogue__video {
     margin-top: -26px;
   }
+
+  .catalogue__card--last {
+    margin-bottom: 23px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,7 +49,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 55px;
+    margin-bottom: 28px;
     align-items: stretch;
   }
 

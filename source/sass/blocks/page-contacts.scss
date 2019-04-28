@@ -42,8 +42,8 @@
   }
 
   .page-contacts__wrapper {
-    margin-left: 58px;
-    margin-bottom: 55px;
+    margin-left: 60px;
+    margin-bottom: 53px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,7 +52,8 @@
   }
 
   .page-contacts__title {
-    margin-top: -21px;
+    margin-top: -25px;
+    margin-bottom: 37px;
 
     &::after {
       top: -10px;
@@ -67,6 +68,6 @@
   .page-contacts__write {
     margin-bottom: 0;
     margin-left: -258px;
-    margin-top: -6px;
+    margin-top: -8px;
   }
 }

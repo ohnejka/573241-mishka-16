@@ -27,7 +27,7 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  color: black;
+  color: rgba(0, 0, 0, 1);
 }
 
 .review__contacts {
@@ -42,16 +42,16 @@
 .review::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -9px;
   left: 0;
 
   width: 100%;
   height: 25px;
 
   background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: 0% 50%;
-  background-size: 100%;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 290px;
 }
 
 .review__add {
@@ -72,12 +72,11 @@
       background-image: url("../img/review@2x.jpg");
       background-size: 350px auto;
     }
-
   }
 
   .review__title {
     margin-top: 78px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .review__text {
@@ -97,7 +96,8 @@
   }
 
   .review::after {
-    bottom: -85px;
+    bottom: -97px;
+    background-size: 800px;
     left: 0;
   }
 }

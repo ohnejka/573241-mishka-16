@@ -14,7 +14,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -60px;
-    border-top: solid 1px rgb(236, 236, 236);
+    border-top: solid 1px rgba(236, 236, 236, 1);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
