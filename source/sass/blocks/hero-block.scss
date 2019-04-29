@@ -2,6 +2,10 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -10,12 +14,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -60px;
-    border-top: solid 1px rgb(236, 236, 236);
+    border-top: solid 1px rgba(236, 236, 236, 1);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero-block {
     background-image: url("../img/hero-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }

@@ -4,33 +4,39 @@
   flex-shrink: 0;
   justify-content: center;
   align-content: center;
-  padding-top: 30px;
   padding-bottom: 30px;
 
   font-size: 19px;
   font-weight: 700;
   line-height: 18px;
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 1);
 }
 
 .copyright__academy {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   margin-left: 20px;
   width: 30px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
+.copyright__svg {
+  position: absolute;
+  bottom: -15px;
+  right: -7px;
+  height: 40px;
+  width: 40px;
+}
 
-    width: 30px;
-    height: 35px;
+.copyright__svg path {
+  fill: rgba(99, 209, 187, 1);
+}
 
-    top: -22px;
-    left: 8px;
+.copyright__svg:hover path,
+.copyright__svg:focus path {
+  fill: $greeny-blue;
+}
 
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.copyright__svg:active path {
+  fill: $greeny-blue;
+  opacity: 0.3;
 }

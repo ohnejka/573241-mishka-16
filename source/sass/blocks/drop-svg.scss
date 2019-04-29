@@ -2,6 +2,11 @@
   position: absolute;
   top: 32px;
   left: 32px;
+  cursor: pointer;
+}
+
+.drop-svg path {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .drop-svg--cart {
@@ -12,6 +17,15 @@
   .drop-svg {
     top: 36px;
     left: 33px;
+  }
+
+  .drop-svg:hover path,
+  .drop-svg:focus path {
+    fill: rgba(99, 209, 187, 1);
+  }
+
+  .drop-svg:active path {
+    fill: rgba(99, 209, 187, 0.3);
   }
 
   .drop-svg--cart {

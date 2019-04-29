@@ -98,10 +98,17 @@
   .page-wrapper--decor {
     padding-bottom: 50px;
     position: relative;
+
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
 
     &::after {
       content: "";
