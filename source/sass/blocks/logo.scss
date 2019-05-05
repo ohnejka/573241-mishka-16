@@ -1,4 +1,42 @@
 .logo {
-  width: 102px;
-  height: 34px;
+  width: 86px;
+  height: 35px;
+}
+
+.logo--tablet,
+.logo--desktop {
+  display: none;
+}
+
+.page-header__logo-link:hover .logo ,
+.page-header__logo-link:focus .logo {
+  opacity: 0.6;
+}
+
+.page-header__logo-link:active .logo {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .logo--tablet {
+    display: block;
+    width: 112px;
+    height: 46px;
+  }
+
+  .logo--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo--desktop {
+    display: block;
+    width: 150px;
+    height: 72px;
+  }
+
+  .logo--tablet {
+    display: none;
+  }
 }
